@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>MSW-Gallery</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+      <link rel="stylesheet" href="style_gallery.css">
+</head>
+<style>
+.navbar {
+  overflow: hidden;
+ background-image:url('tr.jpg');
+ border:3px solid #000000;
+
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+    font-size: 20px;
+
+}
+.navbar a.right {
+  float: right;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-image: url('ori.jpg');
+  color: white;
+
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+  font-size: 20px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.dropdown-content {
+  display: none;
+    font-size: 16px;
+  position: absolute;
+  background-image:url('tr.jpg');
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-image: url("ori.jpg");
+  color:white;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+<body>
+<div class="navbar">
+  <a href="home.php">Home</a>
+  <a href="about.php">About us</a>
+  
+</div>
+  <div class="cont s--inactive">
+  <div class="cont__inner">
+    <div class="el">
+      <div class="el__overflow">
+        <div class="el__inner">
+          <div class="el__bg"></div>
+          <div class="el__preview-cont">
+            <h1 class="el__heading"><b>Master</b></h1>
+          </div>
+          <div class="el__content">
+            <div class="el__text">Praise the Lord</div>
+            <div class="el__close-btn"></div>
+          </div>
+        </div>
+      </div>
+      <div class="el__index">
+        <div class="el__index-back">1</div>
+        <div class="el__index-front">
+          <div class="el__index-overlay" data-index="1">1</div>
+        </div>
+      </div>
+    </div>
+    <div class="el">
+      <div class="el__overflow">
+        <div class="el__inner">
+          <div class="el__bg"></div>
+          <div class="el__preview-cont">
+            <h1 class="el__heading"><b>of</b></h1>
+          </div>
+          <div class="el__content">
+            <div class="el__text">Negizhchi</div>
+            <div class="el__close-btn"></div>
+          </div>
+        </div>
+      </div>
+      <div class="el__index">
+        <div class="el__index-back">2</div>
+        <div class="el__index-front">
+          <div class="el__index-overlay" data-index="2">2</div>
+        </div>
+      </div>
+    </div>
+    <div class="el">
+      <div class="el__overflow">
+        <div class="el__inner">
+          <div class="el__bg"></div>
+          <div class="el__preview-cont">
+            <h1 class="el__heading"><b>Social</b></h1>
+          </div>
+          <div class="el__content">
+            <div class="el__text">Humanity</div>
+            <div class="el__close-btn"></div>
+          </div>
+        </div>
+      </div>
+      <div class="el__index">
+        <div class="el__index-back">3</div>
+        <div class="el__index-front">
+          <div class="el__index-overlay" data-index="3">3</div>
+        </div>
+      </div>
+    </div>
+    <div class="el">
+      <div class="el__overflow">
+        <div class="el__inner">
+          <div class="el__bg"></div>
+          <div class="el__preview-cont">
+            <h1 class="el__heading"><b>Work</b></h1>
+          </div>
+          <div class="el__content">
+            <div class="el__text">Forums</div>
+            <div class="el__close-btn"></div>
+          </div>
+        </div>
+      </div>
+      <div class="el__index">
+        <div class="el__index-back">4</div>
+        <div class="el__index-front">
+          <div class="el__index-overlay" data-index="4">4</div>
+        </div>
+      </div>
+    </div>
+    <div class="el">
+      <div class="el__overflow">
+        <div class="el__inner">
+          <div class="el__bg"></div>
+          <div class="el__preview-cont">
+            <h1 class="el__heading"><b>Programme</b></h1>
+          </div>
+          <div class="el__content">
+            <div class="el__text">Unity is Strength</div>
+            <div class="el__close-btn"></div>
+          </div>
+        </div>
+      </div>
+      <div class="el__index">
+        <div class="el__index-back">5</div>
+        <div class="el__index-front">
+          <div class="el__index-overlay" data-index="5">5</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <script  src="index_gallery.js"></script>
+</body>
+</html>

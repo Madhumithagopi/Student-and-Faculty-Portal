@@ -1,0 +1,53 @@
+.label{
+float:left;
+width:100%;
+font-size:14px;
+font-weight:bold;
+padding-bottom:10px;
+padding-top:10px;
+}
+.label1{
+float:left;
+width:100%;
+font-size:17px;
+font-weight:bold;
+padding-bottom:10px;
+padding-top:10px;
+color:191970;
+}
+.text{
+float:left;
+width:250px;
+height:30px;
+padding:5px;
+box-sizing:border-box;
+}
+h2{
+text-align:center;
+text-transform:uppercase;
+}
+.btn{
+float:left;
+padding:10px 15px;
+font-size:17px;
+text-transform:uppercase;
+font-weight:bold;
+color:#000000;
+border:3px solid 555;
+background:#1E90FF;
+}
+.btn1{
+float:left;
+padding:10px 9px;
+font-size:12px;
+text-transform:uppercase;
+font-weight:bold;
+color:#FF0000;
+}
+.error{
+color: #cc0000;
+font-size:20px;
+padding-top:5px;
+float:left;
+width:100x;
+}

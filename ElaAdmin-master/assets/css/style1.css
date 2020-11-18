@@ -1,0 +1,76 @@
+* {box-sizing: border-box;}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.sidebar0 {
+  height: 100%;
+  width:0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: gainsboro;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 40px;
+}
+.sidebar0 a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 23px;
+  color: #000000;
+  display: block;
+  transition: 0.3s;
+}
+.sidebar0 a:hover {
+  color: #f1f1f1;
+}
+.sidebar0 .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 50px;
+  margin-left: 50px;
+}
+.navbar0 {
+  width:300px;
+  height:80px;
+  overflow: auto;
+  
+}
+.openbtn {
+  font-size: 30px;
+  cursor: pointer;
+  padding: 12px 12px;
+  border: none;
+  width:100px;
+  height:60px;
+}
+.navbar0 a {
+  float: right;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+   
+}
+#main0 {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+}
+@media screen and (max-width: 500px) {
+  .navbar0 a {
+    float: none;
+    display: block;
+  }
+}
+.fa-caret-down {
+  float: right;
+  padding-right: 2px;
+}
+@media screen and (max-height: 450px) {
+  .sidebar0 {padding-top: 15px;}
+  .sidebar0 a {font-size: 18px;}
+}

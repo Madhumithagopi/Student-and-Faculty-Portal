@@ -1,0 +1,84 @@
+body {
+  width: 40%;
+  min-width: 100px;
+  height: 80vh;
+  margin: 20vh auto 0;
+  background: linear-gradient(to left, #FF512F, #DD2476);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #282828;
+}
+
+h1 {
+  color: white;
+}
+
+.task {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-perspective: 800px;
+          perspective: 800px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.abstract, .details {
+  width: 100%;
+  padding: 15px 30px;
+  position: relative;
+    	clip: rect(0, 0rem, 15rem, 15rem);
+  background: white;
+}
+.task:hover .abstract,
+.task:hover .details {
+  background: #fafafa;
+}
+
+.abstract {
+  transition: .3s ease all;
+}
+
+.details {
+  max-height: 0;
+  padding: 0;
+  overflow: hidden;
+  visibility: hidden;
+  -webkit-transform: rotateX(-180deg);
+          transform: rotateX(-180deg);
+  -webkit-transform-origin: top center;
+          transform-origin: top center;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  transition: .3s transform ease;
+}
+.details:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 10%;
+  right: 10%;
+  height: 1px;
+  background: grey;
+}
+.task:hover .details {
+  max-height: none;
+  overflow: visible;
+  visibility: visible;
+  -webkit-transform: rotateX(0deg);
+          transform: rotateX(0deg);
+}
+.details__inner {
+  padding: 15px 30px;
+}
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 70%;
+	height: 100%;
+	background-size: cover;
+	background-position: 50% 50%;
+	clip: rect(0, 50rem, 20rem, 20rem);
+	transition: clip .5s cubic-bezier(0.99, 0.01, 0.45, 0.9) .5s;
+  will-change: clip;
+}
